@@ -1,11 +1,14 @@
-Your selected colors:
-
-    Text: #071856 - rgb(7, 24, 86) - hsl(227, 85%, 18%)
-    Background: #f7f8fe - rgb(247, 248, 254) - hsl(231, 78%, 98%)
-    Primary: #2949e4 - rgb(41, 73, 228) - hsl(230, 78%, 53%)
-    Secondary: #ef7fc1 - rgb(239, 127, 193) - hsl(325, 78%, 72%)
-    Accent: #e94f63 - rgb(233, 79, 99) - hsl(352, 78%, 61%)
-
-Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=071856-f7f8fe-2949e4-ef7fc1-e94f63&fonts=Fanwood%20Text-Fanwood%20Text
-
-Thanks for using RealtimeColors.com!
+:root[data-theme="light"] {
+  --text: #0c1108;
+  --background: #f6faf4;
+  --primary: #7fd43a;
+  --secondary: #9f95d0;
+  --accent: #6a9fdc;
+}
+:root[data-theme="dark"] {
+  --text: #f2f7ee;
+  --background: #070b05;
+  --primary: #70c52b;
+  --secondary: #392f6a;
+  --accent: #235895;
+}
