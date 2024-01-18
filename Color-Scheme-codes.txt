@@ -1,11 +1,11 @@
 Your selected colors:
 
-    Text: #0a0a1a - rgb(10, 10, 26) - hsl(240, 44%, 7%)
-    Background: #e3e3f7 - rgb(227, 227, 247) - hsl(240, 56%, 93%)
-    Primary: #2929ae - rgb(41, 41, 174) - hsl(240, 62%, 42%)
-    Secondary: #7373f2 - rgb(115, 115, 242) - hsl(240, 83%, 70%)
-    Accent: #0404cd - rgb(4, 4, 205) - hsl(240, 96%, 41%)
+    Text: #071856 - rgb(7, 24, 86) - hsl(227, 85%, 18%)
+    Background: #f7f8fe - rgb(247, 248, 254) - hsl(231, 78%, 98%)
+    Primary: #2949e4 - rgb(41, 73, 228) - hsl(230, 78%, 53%)
+    Secondary: #ef7fc1 - rgb(239, 127, 193) - hsl(325, 78%, 72%)
+    Accent: #e94f63 - rgb(233, 79, 99) - hsl(352, 78%, 61%)
 
-Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=0a0a1a-e3e3f7-2929ae-7373f2-0404cd&fonts=Fanwood%20Text-Fanwood%20Text
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=071856-f7f8fe-2949e4-ef7fc1-e94f63&fonts=Fanwood%20Text-Fanwood%20Text
 
 Thanks for using RealtimeColors.com!
