@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #0a0a1a - rgb(10, 10, 26) - hsl(240, 44%, 7%)
+    Background: #e3e3f7 - rgb(227, 227, 247) - hsl(240, 56%, 93%)
+    Primary: #2929ae - rgb(41, 41, 174) - hsl(240, 62%, 42%)
+    Secondary: #7373f2 - rgb(115, 115, 242) - hsl(240, 83%, 70%)
+    Accent: #0404cd - rgb(4, 4, 205) - hsl(240, 96%, 41%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=0a0a1a-e3e3f7-2929ae-7373f2-0404cd&fonts=Fanwood%20Text-Fanwood%20Text
+
+Thanks for using RealtimeColors.com!
