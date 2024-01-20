@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedBay</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MedBay</h1>
+    </header>
+
+    <div class="container" id="loginPage">
+        <h2>Login</h2>
+        <!-- Add your login form here -->
+        <button onclick="showHomePage()">Login</button>
+    </div>
+
+    <div class="container" id="homePage" style="display: none;">
+        <h2>Welcome to MedBay</h2>
+        <form id="medForm">
+            <label for="medication">Medication:</label>
+            <input type="text" id="medication" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <button type="button" onclick="addMedication()">Add Medication</button>
+        </form>
+
+        <ul id="medList"></ul>
+
+        <div class="notification" id="notification">Medication list updated!</div>
+    </div>
+    <script src=""></script>
+
+</body>
+</html>
