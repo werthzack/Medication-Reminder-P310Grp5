@@ -1,10 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2CC8F;
+    font-family: "Cambria", sans-serif;
+    display: inline;
 }
-header {
+
+
+.TopBar{
+    background-color: #9f95d0;
+}
+
+.body{
+    display: flex;
+}
+
+.Sidebar{
+    background-color: #9f95d0;
+    max-width: 30%;
+}
+
+.Sidebar ul{
+    list-style-type: none;
+    display: inline;
+}
+
+.Sidebar ul li a {
+    background-color: #7fd43a;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 70%;
+}
+/* header {
     background-color:#E07A5F ;
     color: #fff;
     padding: 10px;
@@ -40,5 +69,6 @@ form {
     display: none;
 }
 .completed {
-    background-color: #d0f0c0; /* Green background for completed items */
-}
+    background-color: #d0f0c0; /* Green background for completed items 
+} 
+*/
