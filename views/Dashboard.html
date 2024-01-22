@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedBay - Medication Reminder App</title>
+    <link rel="stylesheet" href="/public/Dashboard.css">
+    <script src="/public/scripts/Dashboard.js"></script>
+</head>
+
+<body>
+    <header>
+        MedBay
+        <button onclick="logout()">Logout</button>
+    </header>
+    <main>
+        <label for="medicationName">Medication Name:</label>
+        <input type="text" id="medicationName" placeholder="Enter medication name">
+
+        <label for="medicationTime">Medication Time:</label>
+        <input type="time" id="medicationTime">
+
+        <button onclick="addMedication()">Add Medication</button>
+
+        <h2>Medication List</h2>
+        <ul class="medication-list" id="medicationList">
+            <!-- Medication items will be dynamically added here -->
+        </ul>
+    </main>
+    <!-- ... (HTML code above) ... -->
+
+
+<!-- ... (HTML code below) ... -->
+
+
+
+    
+</body>
+</html>
