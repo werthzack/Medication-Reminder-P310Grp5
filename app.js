@@ -19,6 +19,7 @@ mongoose
 	})
 	.catch((err) => console.log(err));
 
+// Routes
 app.get("/", (req, res) => {
 	res.sendFile("./views/Home.html", { root: __dirname });
 });
@@ -36,7 +37,7 @@ app.get("/dashboard", (req, res) => {
 app.get("/logout", (req, res) => {
 	res.redirect("/");
 });
-app.post("/submit", (req, res) => {
+app.post("/signup", (req, res) => {
 	console.log(req.body);
 
 	const user = new User({
@@ -56,6 +57,27 @@ app.post("/submit", (req, res) => {
 		});
 });
 
+app.post("/login", async (req, res) => {
+	const email = req.body.email;
+	const password = req.body.password;
+
+	// Retrieve user data from MongoDB based on the provided email
+	const user = await User.findOne({ email });
+
+	if (user) {
+		console.log("user found.");
+		// Compare the input password with the stored password
+		if (password === user.password) {
+			console.log("They match");
+			res.redirect("/dashboard");
+		} else {
+			res.status(401).send("Incorrect password");
+		}
+	} else {
+		res.status(404).send("User not found");
+	}
+});
+
 app.use((req, res) => {
-	res.status(404).send("<h1>Error, this page does not exist</h1>");
+	res.status(404).send("<h1>404 (Error)<br>This page does not exist.</h1>");
 });

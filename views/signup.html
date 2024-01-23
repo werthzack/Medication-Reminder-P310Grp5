@@ -33,7 +33,7 @@
 
 					<form
 						id="loginForm"
-						action="/submit"
+						action="/signup"
 						method="POST"
 					>
 						<label for="fname">First name:</label>
@@ -92,20 +92,7 @@
 			</div>
 		</div>
 
-		<script>
-			const passwordInput = document.getElementById("password");
-			const showHideText = document.getElementById("showHideText");
-
-			showHideText.addEventListener("click", function () {
-				if (passwordInput.type === "password") {
-					passwordInput.type = "text";
-					showHideText.textContent = "Hide";
-				} else {
-					passwordInput.type = "password";
-					showHideText.textContent = "Show";
-				}
-			});
-
+		<script src="/scripts/login-signup.js">
 			// function submitForm() {
 			// 	const firstNameInput = document.getElementById("fname");
 			// 	const lastNameInput = document.getElementById("lname");

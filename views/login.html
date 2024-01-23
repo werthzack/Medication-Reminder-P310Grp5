@@ -31,7 +31,11 @@
 						Med Bay
 					</h1>
 
-					<form id="loginForm">
+					<form
+						id="loginForm"
+						action="/login"
+						method="POST"
+					>
 						<label for="email">Email:</label>
 						<input
 							type="text"
@@ -41,18 +45,23 @@
 						/>
 
 						<label for="password">Password:</label>
-						<input
-							type="password"
-							id="password"
-							name="password"
-							required
-						/>
+						<div class="input-container">
+							<input
+								type="password"
+								id="password"
+								name="password"
+								required
+							/><span
+								class="show-hide"
+								id="showHideText"
+								>Show</span
+							>
+						</div>
 
 						<button
 							type="submit"
 							id="loginButton"
 							href="Dashboard.html"
-							onclick="checkPassword()"
 						>
 							Login
 						</button>
@@ -69,5 +78,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="/scripts/login-signup.js"></script>
 	</body>
 </html>

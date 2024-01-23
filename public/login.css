@@ -150,6 +150,7 @@ body {
 .show-hide {
 	font-family: sans-serif;
 	font-size: small;
+	font-weight: bold;
 	position: absolute;
 	right: 10px; /* Adjust the position as needed */
 	top: 50%;
