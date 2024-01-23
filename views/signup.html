@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Medication Reminder - Login</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="login.css"
+		/>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="logo-container">
+				<div class="login-details">
+					<img
+						src="/assets/logo.jpg"
+						alt="Logo"
+						class="logo"
+					/>
+
+					<h1
+						class="animated-header"
+						style="font-family: cursive"
+					>
+						Med Bay
+					</h1>
+
+					<form
+						id="loginForm"
+						action="/submit"
+						method="POST"
+					>
+						<label for="fname">First name:</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							required
+						/>
+						<label for="lname">Last name:</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							required
+						/>
+						<label for="email">Email:</label>
+						<input
+							type="text"
+							id="email"
+							name="email"
+							required
+						/>
+
+						<label
+							for="password"
+							id="passwordLbl"
+							>Password:</label
+						>
+
+						<div class="input-container">
+							<input
+								type="password"
+								id="password"
+								name="password"
+								required
+							/><span
+								class="show-hide"
+								id="showHideText"
+								>Show</span
+							>
+						</div>
+
+						<button id="loginButton">Sign up</button>
+						<!-- onclick="submitForm()" -->
+						<p id="signupText">
+							Already have an account?
+							<a
+								href="/login"
+								id="signupLink"
+								>login</a
+							>.
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const passwordInput = document.getElementById("password");
+			const showHideText = document.getElementById("showHideText");
+
+			showHideText.addEventListener("click", function () {
+				if (passwordInput.type === "password") {
+					passwordInput.type = "text";
+					showHideText.textContent = "Hide";
+				} else {
+					passwordInput.type = "password";
+					showHideText.textContent = "Show";
+				}
+			});
+
+			// function submitForm() {
+			// 	const firstNameInput = document.getElementById("fname");
+			// 	const lastNameInput = document.getElementById("lname");
+			// 	const emailInput = document.getElementById("email");
+			// 	const passwordInput = document.getElementById("password");
+
+			// 	const firstname = firstNameInput.value;
+			// 	const lastname = lastNameInput.value;
+			// 	const email = emailInput.value;
+			// 	const password = passwordInput.value;
+
+			// 	const data = {
+			// 		email: email,
+			// 		firstname: firstname,
+			// 		lastname: lastname,
+			// 		password: password,
+			// 	};
+
+			// 	fetch("/submit", {
+			// 		method: "POST",
+			// 		headers: {
+			// 			"Content-Type": "application/json",
+			// 		},
+			// 		body: JSON.stringify(data),
+			// 	})
+			// 		.then((response) => {
+			// 			if (response.ok) {
+			// 				firstNameInput.value = "";
+			// 				lastNameInput.value = "";
+			// 				emailInput.value = "";
+			// 				passwordInput.value = "";
+			// 				alert("Form submitted");
+			// 			}
+			// 		})
+
+			// 		.catch((err) => {
+			// 			// alert("There has been an error", err);
+			// 			console.log(err);
+			// 		});
+			// }
+		</script>
+	</body>
+</html>

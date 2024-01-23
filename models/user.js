@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+const Schema = mongoose.Schema;
 // Define the User schema
-const userSchema = new mongoose.Schema(
+const userSchema = new Schema(
 	{
 		// Email field
 		email: {
