@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>MedBay - Medication Reminder App</title>
-		<link
-			rel="stylesheet"
-			href="/login.css"
-		/>
-		<script src="/scripts/Dashboard.js"></script>
-	</head>
 
-	<body>
-		<header>
-			MedBay
-			<a href="/logout"><button>Logout</button></a>
-		</header>
-		<main>
-			<label for="medicationName">Medication Name:</label>
-			<input
-				type="text"
-				id="medicationName"
-				placeholder="Enter medication name"
-			/>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MedBay - Medication Reminder App</title>
+	<link rel="stylesheet" href="/public/Dashboard.css">
+	<script src="/public/scripts/Dashboard.js"></script>
+</head>
 
-			<label for="medicationTime">Medication Time:</label>
-			<input
-				type="time"
-				id="medicationTime"
-			/>
+<body>
+	<header>
+		<h1>MedBay</h1>
+		<button href="/logout" id="logoutButton">Logout</button>
+	</header>
+	<main>
+		<label for="medicationName">Medication Name:</label>
+		<input type="text" id="medicationName" placeholder="Enter medication name">
 
-			<button onclick="addMedication()">Add Medication</button>
+		<label for="medicationTime">Medication Time:</label>
+		<input type="time" id="medicationTime">
 
-			<h2>Medication List</h2>
-			<ul
-				class="medication-list"
-				id="medicationList"
-			>
-				<!-- Medication items will be dynamically added here -->
-			</ul>
-		</main>
-		<!-- ... (HTML code above) ... -->
+		<label for="medicationDuration">Medication Duration (in days):</label>
+		<input type="number" id="medicationDuration" placeholder="Enter medication duration">
 
-		<!-- ... (HTML code below) ... -->
-	</body>
+		<button id="addMedicationButton" onclick="addMedication()">Add Medication</button>
+
+		<h2>Medication List</h2>
+		<ul class="medication-list" id="medicationList">
+			<!-- Medication items will be dynamically added here -->
+		</ul>
+	</main>
+</body>
+
 </html>
