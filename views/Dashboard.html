@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>MedBay - Medication Reminder App</title>
+		<link
+			rel="stylesheet"
+			href="/Dashboard.css"
+		/>
+		<script src="/scripts/Dashboard.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MedBay - Medication Reminder App</title>
-	<link rel="stylesheet" href="/public/Dashboard.css">
-	<script src="/public/scripts/Dashboard.js"></script>
-</head>
+	<body>
+		<header>
+			<h1>MedBay</h1>
+			<button
+				href="/logout"
+				id="logoutButton"
+			>
+				Logout
+			</button>
+		</header>
+		<main>
+			<label for="medicationName">Medication Name:</label>
+			<input
+				type="text"
+				id="medicationName"
+				placeholder="Enter medication name"
+			/>
 
-<body>
-	<header>
-		<h1>MedBay</h1>
-		<button href="/logout" id="logoutButton">Logout</button>
-	</header>
-	<main>
-		<label for="medicationName">Medication Name:</label>
-		<input type="text" id="medicationName" placeholder="Enter medication name">
+			<label for="medicationTime">Medication Time:</label>
+			<input
+				type="time"
+				id="medicationTime"
+			/>
 
-		<label for="medicationTime">Medication Time:</label>
-		<input type="time" id="medicationTime">
+			<label for="medicationDuration">Medication Duration (in days):</label>
+			<input
+				type="number"
+				id="medicationDuration"
+				placeholder="Enter medication duration"
+			/>
 
-		<label for="medicationDuration">Medication Duration (in days):</label>
-		<input type="number" id="medicationDuration" placeholder="Enter medication duration">
+			<button
+				id="addMedicationButton"
+				onclick="addMedication()"
+			>
+				Add Medication
+			</button>
 
-		<button id="addMedicationButton" onclick="addMedication()">Add Medication</button>
-
-		<h2>Medication List</h2>
-		<ul class="medication-list" id="medicationList">
-			<!-- Medication items will be dynamically added here -->
-		</ul>
-	</main>
-</body>
-
+			<h2>Medication List</h2>
+			<ul
+				class="medication-list"
+				id="medicationList"
+			>
+				<!-- Medication items will be dynamically added here -->
+			</ul>
+		</main>
+	</body>
 </html>
