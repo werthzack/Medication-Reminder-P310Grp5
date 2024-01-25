@@ -49,7 +49,7 @@ app.post("/signup", (req, res) => {
 	user
 		.save()
 		.then((result) => {
-			res.status(200).redirect("/dashboard");
+			res.status(200).redirect("/login");
 			console.log("it works");
 		})
 		.catch((err) => {
